@@ -1,0 +1,9 @@
+Here’s  the architecture diagram for your Verity-style full-stack platform:
+
+React + Next.js frontend connects to a PHP + MySQL rackend va SSR and APIs.
+
+Redis handles caching, while Python (OpenAI + spaCy) powers the AI summarization layer via async jobs using Celery.
+
+Everythine’s containerized with Docker, deployed via GitHub Actions, and monitored through Sentry + OpenTelemetry.
+
+Start is boosted with Cloudflare Edge Caching, and Figma integration ensures perfect design fidelity.
